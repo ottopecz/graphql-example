@@ -1,4 +1,4 @@
-FROM node:10.16-alpine
+FROM node:12.16-alpine
 
 WORKDIR /srv/app
 ENV PORT=3000
@@ -10,4 +10,4 @@ RUN npm build
 RUN chown -R node:node /srv/app/
 USER node
 
-CMD ["node", "build/index.js"]
+CMD ["node", "build/app.js"]
