@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node src/app.js",
     "watch": "nodemon src/app.js",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src"
   },
   "keywords": [
     "node",
